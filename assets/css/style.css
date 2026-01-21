@@ -857,6 +857,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
+  min-height: 200px;
   padding: 20px;
   position: relative;
 }
