@@ -843,8 +843,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Friends */
 .friends-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -853,25 +853,31 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  align-items: start;
 }
 
 .friend-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 
 .friend-image {
   display: block;
-  overflow: hidden;
+  order: 2;
+  padding: 15px;
 }
 
 .friend-image img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .friend-info {
   padding: 20px;
+  order: 1;
 }
 
 .friend-info h3 {
@@ -896,6 +902,16 @@ h1, h2, h3, h4, h5, h6 {
 .friend-info .btn {
   font-size: 0.85rem;
   padding: 8px 16px;
+}
+
+@media (max-width: 480px) {
+  .friend-card {
+    grid-template-columns: 1fr 100px;
+  }
+
+  .friend-image img {
+    width: 80px;
+  }
 }
 
 /* Mailchimp Signup */
