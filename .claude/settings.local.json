@@ -10,7 +10,8 @@
       "WebFetch(domain:www.scratchyfish.com)",
       "Bash(open https://mikefullerton.github.io/scratchyfish.com/bio)",
       "Bash(sips:*)",
-      "Bash(open https://mikefullerton.github.io/scratchyfish.com/shows)"
+      "Bash(open https://mikefullerton.github.io/scratchyfish.com/shows)",
+      "Bash(open https://mikefullerton.github.io/scratchyfish.com/photos)"
     ]
   }
 }

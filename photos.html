@@ -8,9 +8,7 @@ subtitle: Gallery
 <div class="photo-gallery">
   {% for photo in site.data.photos %}
   <figure class="photo-item">
-    <a href="{{ photo.src }}" target="_blank">
-      <img src="{{ photo.src }}" alt="{{ photo.alt }}" loading="lazy">
-    </a>
+    <img src="{{ photo.src }}" alt="{{ photo.alt }}" loading="lazy">
     {% if photo.caption %}
     <figcaption>{{ photo.caption }}</figcaption>
     {% endif %}
