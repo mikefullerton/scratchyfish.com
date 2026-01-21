@@ -39,6 +39,9 @@ function initLightbox() {
   const gallery = document.querySelector('.photo-gallery');
   if (!gallery) return;
 
+  // Don't create duplicate if lightbox already exists (from inline script)
+  if (document.getElementById('lightbox')) return;
+
   const photos = Array.from(gallery.querySelectorAll('.photo-item'));
   if (photos.length === 0) return;
 
