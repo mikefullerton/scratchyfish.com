@@ -1,8 +1,9 @@
 # Jekyll configuration for Scratchy Fish website
 title: Scratchy Fish
-description: Official website for Scratchy Fish
+description: "Scratchy Fish is a progressive jazz rock band from San Jose, California. Listen to our music, see upcoming shows, and connect with us."
 url: "https://mikefullerton.github.io"
 baseurl: "/scratchyfish.com"
+lang: en
 
 # Build settings
 markdown: kramdown
