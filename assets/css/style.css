@@ -655,6 +655,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 
+.contact-email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.contact-email-btn svg {
+  flex-shrink: 0;
+}
+
 .contact-social {
   display: flex;
   justify-content: center;
