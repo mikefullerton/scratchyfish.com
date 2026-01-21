@@ -1,8 +1,8 @@
 # Jekyll configuration for Scratchy Fish website
 title: Scratchy Fish
 description: Official website for Scratchy Fish
-url: "https://scratchyfish.com"
-baseurl: ""
+url: "https://mikefullerton.github.io"
+baseurl: "/scratchyfish.com"
 
 # Build settings
 markdown: kramdown
