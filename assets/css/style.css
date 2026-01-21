@@ -767,6 +767,58 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
+/* Single Member Page */
+.member-single {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  max-width: 900px;
+}
+
+.member-single-photo img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.member-single-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.member-single-bio {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.member-single-nav {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .member-single {
+    grid-template-columns: 1fr;
+  }
+
+  .member-single-photo {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+/* Member card as link */
+a.member-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.member-card:hover {
+  color: inherit;
+}
+
 .member-links {
   display: flex;
   flex-direction: column;
