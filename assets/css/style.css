@@ -855,12 +855,14 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 500px;
   display: grid;
   grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
   padding: 20px;
-  gap: 20px;
+  gap: 15px 20px;
 }
 
 .friend-title {
   grid-column: 1;
+  grid-row: 1;
 }
 
 .friend-title h3 {
@@ -873,7 +875,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .friend-title h3 a:hover {
-  color: var(--color-accent);
+  color: var(--color-text-muted);
 }
 
 .friend-description {
@@ -882,16 +884,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.friend-right {
-  grid-column: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .friend-image {
+  grid-column: 2;
+  grid-row: 1 / 3;
   display: block;
-  margin-bottom: 15px;
+  align-self: start;
 }
 
 .friend-image img {
@@ -899,6 +896,12 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   object-fit: contain;
   border-radius: 6px;
+}
+
+.friend-links {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
 }
 
 .friend-links-list {
@@ -919,30 +922,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .friend-link:hover {
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 .friend-link svg {
   flex-shrink: 0;
 }
 
-.friend-right .btn {
+.friend-links .btn {
   font-size: 0.8rem;
   padding: 6px 12px;
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+}
+
+.friend-links .btn:hover {
+  background: var(--color-text-muted);
 }
 
 @media (max-width: 480px) {
   .friend-card {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
   }
 
-  .friend-right {
+  .friend-image {
     grid-column: 1;
-    align-items: center;
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 10px;
   }
 
   .friend-title {
+    grid-row: 2;
     text-align: center;
+  }
+
+  .friend-links {
+    grid-row: 3;
+    align-self: start;
   }
 
   .friend-links-list {
