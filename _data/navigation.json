@@ -1,5 +1,6 @@
 [
   { "name": "Home", "url": "/" },
+  { "name": "News", "url": "/news" },
   { "name": "Bio", "url": "/bio" },
   { "name": "Music", "url": "/music" },
   { "name": "Shows", "url": "/shows" },
