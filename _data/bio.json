@@ -1,5 +1,43 @@
 {
   "title": "About Scratchy Fish",
   "image": "https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/789228/dc0e476cd9c38c034e66157db17e576f9e5df68f/original/intro-bg.jpg",
-  "content": "<p>Scratchy Fish is a progressive jazz rock band from San Jose, California.</p><p>Our debut album \"Attack of the Banana Slugs\" features original compositions and creative covers, blending jazz improvisation with rock energy.</p>"
+  "content": "<p>Scratchy Fish is a progressive jazz rock band from San Jose, California.</p><p>Our debut album \"Attack of the Banana Slugs\" features original compositions and creative covers, blending jazz improvisation with rock energy.</p>",
+  "members": [
+    {
+      "name": "Anton Ross",
+      "role": "Saxophone",
+      "photo": "https://placedog.net/400/400?id=1",
+      "bio": "Killed in Prison"
+    },
+    {
+      "name": "Ian Schaeffer",
+      "role": "Bass",
+      "photo": "https://placedog.net/400/400?id=2",
+      "bio": "Killed in Prison"
+    },
+    {
+      "name": "Mike Fullerton",
+      "role": "Drums",
+      "photo": "https://placedog.net/400/400?id=3",
+      "bio": "Killed in Prison"
+    },
+    {
+      "name": "Mike McKenna",
+      "role": "Guitar",
+      "photo": "https://placedog.net/400/400?id=4",
+      "bio": "Killed in Prison"
+    },
+    {
+      "name": "Phillip Bernosky",
+      "role": "Keyboard and Piano",
+      "photo": "https://placedog.net/400/400?id=5",
+      "bio": "Killed in Prison"
+    },
+    {
+      "name": "Steve Sinclair",
+      "role": "Saxophone",
+      "photo": "https://placedog.net/400/400?id=6",
+      "bio": "Killed in Prison"
+    }
+  ]
 }

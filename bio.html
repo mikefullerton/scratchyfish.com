@@ -15,3 +15,23 @@ subtitle: Get to know the band
     {{ site.data.bio.content }}
   </div>
 </div>
+
+{% if site.data.bio.members.size > 0 %}
+<section class="band-members">
+  <h2>The Band</h2>
+  <div class="members-grid">
+    {% for member in site.data.bio.members %}
+    <div class="member-card">
+      <div class="member-photo">
+        <img src="{{ member.photo }}" alt="{{ member.name }}">
+      </div>
+      <div class="member-info">
+        <h3>{{ member.name }}</h3>
+        <p class="member-role">{{ member.role }}</p>
+        <p class="member-bio">{{ member.bio }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
