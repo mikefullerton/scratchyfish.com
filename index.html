@@ -1,0 +1,94 @@
+---
+layout: default
+title: Home
+---
+
+{% include hero.html title=site.data.site.title subtitle=site.data.site.tagline %}
+
+<!-- Latest News Section -->
+<section class="section news-section">
+  <div class="container">
+    <h2>Latest News</h2>
+    <div class="posts-grid">
+      {% for post in site.data.posts limit:3 %}
+      <article class="post-card">
+        {% if post.image %}
+        <div class="post-image">
+          <img src="{{ post.image }}" alt="{{ post.title }}">
+        </div>
+        {% endif %}
+        <div class="post-content">
+          <time datetime="{{ post.date }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Featured Music Section -->
+{% if site.data.albums.size > 0 %}
+<section class="section music-section">
+  <div class="container">
+    <h2>Latest Music</h2>
+    {% assign album = site.data.albums | first %}
+    <div class="featured-album">
+      {% if album.artwork %}
+      <div class="album-artwork">
+        <img src="{{ album.artwork }}" alt="{{ album.title }}">
+      </div>
+      {% endif %}
+      <div class="album-info">
+        <h3>{{ album.title }}</h3>
+        <p class="album-artist">{{ album.artist }} &middot; {{ album.year }}</p>
+
+        {% if album.bandcamp_embed and album.bandcamp_embed != "" %}
+        <div class="music-player">
+          <iframe style="border: 0; width: 100%; height: 120px;" src="{{ album.bandcamp_embed }}" seamless></iframe>
+        </div>
+        {% endif %}
+
+        {% if album.spotify_embed and album.spotify_embed != "" %}
+        <div class="music-player">
+          <iframe style="border-radius:12px" src="{{ album.spotify_embed }}" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        {% endif %}
+
+        <a href="{{ '/music' | relative_url }}" class="btn">View All Music</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- Upcoming Shows Section -->
+{% if site.data.shows.size > 0 %}
+<section class="section shows-section">
+  <div class="container">
+    <h2>Upcoming Shows</h2>
+    <div class="shows-list">
+      {% for show in site.data.shows limit:3 %}
+      <div class="show-item">
+        <div class="show-date">
+          <span class="month">{{ show.date | date: "%b" }}</span>
+          <span class="day">{{ show.date | date: "%d" }}</span>
+        </div>
+        <div class="show-info">
+          <h3>{{ show.venue }}</h3>
+          <p>{{ show.city }}</p>
+          {% if show.details %}<p class="show-details">{{ show.details }}</p>{% endif %}
+        </div>
+        {% if show.ticket_url and show.ticket_url != "" %}
+        <a href="{{ show.ticket_url }}" class="btn btn-small" target="_blank">Tickets</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <a href="{{ '/shows' | relative_url }}" class="btn">View All Shows</a>
+  </div>
+</section>
+{% endif %}
+
+{% include mailchimp.html %}

@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Album Title",
+    "artist": "Scratchy Fish",
+    "artwork": "/assets/images/albums/album-cover.jpg",
+    "year": 2024,
+    "bandcamp_embed": "",
+    "spotify_embed": "",
+    "tracks": [
+      { "title": "Track One", "duration": "3:45" },
+      { "title": "Track Two", "duration": "4:12" },
+      { "title": "Track Three", "duration": "3:58" }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+---
+layout: page
+title: Bio
+subtitle: Get to know the band
+---
+
+<div class="bio-content">
+  {% if site.data.bio.image %}
+  <div class="bio-image">
+    <img src="{{ site.data.bio.image }}" alt="{{ site.data.site.title }}">
+  </div>
+  {% endif %}
+
+  <div class="bio-text">
+    {{ site.data.bio.content }}
+  </div>
+</div>

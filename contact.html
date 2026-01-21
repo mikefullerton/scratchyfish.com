@@ -1,0 +1,32 @@
+---
+layout: page
+title: Contact
+subtitle: Get in touch
+---
+
+<div class="contact-content">
+  <div class="contact-info">
+    <h2>Connect With Us</h2>
+    <p>For booking inquiries, press, or just to say hello, reach out through our social media channels.</p>
+
+    <div class="contact-social">
+      {% if site.data.site.social.instagram and site.data.site.social.instagram != "" %}
+      <a href="{{ site.data.site.social.instagram }}" target="_blank" rel="noopener" class="social-link">
+        Instagram
+      </a>
+      {% endif %}
+      {% if site.data.site.social.facebook and site.data.site.social.facebook != "" %}
+      <a href="{{ site.data.site.social.facebook }}" target="_blank" rel="noopener" class="social-link">
+        Facebook
+      </a>
+      {% endif %}
+      {% if site.data.site.social.twitter and site.data.site.social.twitter != "" %}
+      <a href="{{ site.data.site.social.twitter }}" target="_blank" rel="noopener" class="social-link">
+        Twitter/X
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% include mailchimp.html %}

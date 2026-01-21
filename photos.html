@@ -1,0 +1,22 @@
+---
+layout: page
+title: Photos
+subtitle: Gallery
+---
+
+{% if site.data.photos.size > 0 %}
+<div class="photo-gallery">
+  {% for photo in site.data.photos %}
+  <figure class="photo-item">
+    <a href="{{ photo.src }}" target="_blank">
+      <img src="{{ photo.src }}" alt="{{ photo.alt }}" loading="lazy">
+    </a>
+    {% if photo.caption %}
+    <figcaption>{{ photo.caption }}</figcaption>
+    {% endif %}
+  </figure>
+  {% endfor %}
+</div>
+{% else %}
+<p class="no-content">Photos coming soon!</p>
+{% endif %}
