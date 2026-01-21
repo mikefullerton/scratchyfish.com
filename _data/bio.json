@@ -4,15 +4,9 @@
   "content": "<p>Scratchy Fish is a progressive jazz rock band from San Jose, California.</p><p>Our debut album \"Attack of the Banana Slugs\" features original compositions and creative covers, blending jazz improvisation with rock energy.</p>",
   "members": [
     {
-      "name": "Anton Ross",
-      "role": "Saxophone",
-      "photo": "https://placedog.net/400/400?id=1",
-      "bio": "Killed in Prison"
-    },
-    {
-      "name": "Ian Schaeffer",
-      "role": "Bass",
-      "photo": "https://placedog.net/400/400?id=2",
+      "name": "Phillip Bernosky",
+      "role": "Keyboard and Piano",
+      "photo": "https://placedog.net/400/400?id=5",
       "bio": "Killed in Prison"
     },
     {
@@ -28,9 +22,15 @@
       "bio": "Killed in Prison"
     },
     {
-      "name": "Phillip Bernosky",
-      "role": "Keyboard and Piano",
-      "photo": "https://placedog.net/400/400?id=5",
+      "name": "Anton Ross",
+      "role": "Saxophone",
+      "photo": "https://placedog.net/400/400?id=1",
+      "bio": "Killed in Prison"
+    },
+    {
+      "name": "Ian Schaeffer",
+      "role": "Bass",
+      "photo": "https://placedog.net/400/400?id=2",
       "bio": "Killed in Prison"
     },
     {
