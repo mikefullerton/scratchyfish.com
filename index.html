@@ -14,7 +14,7 @@ title: Home
       <article class="post-card">
         {% if post.image %}
         <div class="post-image">
-          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          <img src="{% if post.image contains 'http' %}{{ post.image }}{% else %}{{ post.image | relative_url }}{% endif %}" alt="{{ post.title }}">
         </div>
         {% endif %}
         <div class="post-content">
@@ -37,7 +37,7 @@ title: Home
     <div class="featured-album">
       {% if album.artwork %}
       <div class="album-artwork">
-        <img src="{{ album.artwork | relative_url }}" alt="{{ album.title }}">
+        <img src="{% if album.artwork contains 'http' %}{{ album.artwork }}{% else %}{{ album.artwork | relative_url }}{% endif %}" alt="{{ album.title }}">
       </div>
       {% endif %}
       <div class="album-info">

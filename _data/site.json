@@ -1,18 +1,18 @@
 {
   "title": "Scratchy Fish",
-  "tagline": "Rock music from the deep",
-  "hero_image": "/assets/images/hero-bg.jpg",
+  "tagline": "Progressive Jazz Rock from San Jose",
+  "hero_image": "https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/789228/dc0e476cd9c38c034e66157db17e576f9e5df68f/original/intro-bg.jpg",
   "mailchimp_form_action": "",
   "social": {
-    "spotify": "https://open.spotify.com/artist/YOUR_ARTIST_ID",
-    "apple_music": "https://music.apple.com/artist/scratchy-fish",
-    "youtube": "https://youtube.com/@scratchyfish",
+    "spotify": "https://open.spotify.com/album/6begaPLxrQwTQCLoGTX2jk?si=fWlKKXLLQDWNMRt4qj0OFA",
+    "apple_music": "https://music.apple.com/us/artist/scratchy-fish/1704489317",
+    "youtube": "https://www.youtube.com/channel/UC_hx80jKEVUNjvHHVoVA7mw",
     "instagram": "https://instagram.com/scratchyfish",
-    "facebook": "https://facebook.com/scratchyfish",
+    "facebook": "https://www.facebook.com/scratchyfish",
     "twitter": "https://twitter.com/scratchyfish",
-    "tiktok": "https://tiktok.com/@scratchyfish",
-    "tidal": "https://tidal.com/artist/scratchy-fish",
-    "amazon_music": "https://music.amazon.com/artists/scratchy-fish",
-    "bandcamp": "https://scratchyfish.bandcamp.com"
+    "tiktok": "https://www.tiktok.com/@scratchyfish",
+    "tidal": "https://tidal.com/artist/41641542",
+    "amazon_music": "https://music.amazon.com/artists/B0CGTTL3X4/scratchy-fish",
+    "bandcamp": ""
   }
 }

@@ -1,15 +1,17 @@
 [
   {
-    "title": "Album Title",
+    "title": "Attack of the Banana Slugs",
     "artist": "Scratchy Fish",
-    "artwork": "/assets/images/albums/album-cover.jpg",
-    "year": 2024,
+    "artwork": "https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/789228/b253c4a49ee0454335ac5d54a8cd8bb8d382df75/original/bananaslugs.jpg",
+    "year": 2023,
     "bandcamp_embed": "",
-    "spotify_embed": "",
+    "spotify_embed": "https://open.spotify.com/embed/album/6begaPLxrQwTQCLoGTX2jk?utm_source=generator&theme=0",
     "tracks": [
-      { "title": "Track One", "duration": "3:45" },
-      { "title": "Track Two", "duration": "4:12" },
-      { "title": "Track Three", "duration": "3:58" }
+      { "title": "All Blues", "duration": "7:22" },
+      { "title": "Bed Bugs and Ballyhoo", "duration": "4:45" },
+      { "title": "Dodge the Dodo", "duration": "4:55" },
+      { "title": "Lazarus", "duration": "11:26" },
+      { "title": "Paranoid Android", "duration": "7:30" }
     ]
   }
 ]

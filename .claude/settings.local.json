@@ -6,7 +6,8 @@
       "Bash(gh api:*)",
       "Bash(open https://mikefullerton.github.io/scratchyfish.com/)",
       "WebFetch(domain:mikefullerton.github.io)",
-      "Bash(git push)"
+      "Bash(git push)",
+      "WebFetch(domain:www.scratchyfish.com)"
     ]
   }
 }
