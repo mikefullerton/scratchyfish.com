@@ -3,6 +3,12 @@
     "name": "Idiot Fish",
     "url": "https://idiotfish.net",
     "image": "https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/147201/d527a9c51d39bcbae64ec3112232a6991abe3471/original/dall-e-2022-09-06-11-59-40.png",
-    "description": "Friends and Mentors"
+    "description": "Friends and Mentors",
+    "links": [
+      { "type": "website", "url": "https://idiotfish.net", "label": "idiotfish.net" },
+      { "type": "spotify", "url": "https://open.spotify.com/artist/4gj9OjIKYMCpI5ugnCjUGF", "label": "Spotify" },
+      { "type": "youtube", "url": "https://www.youtube.com/watch?v=56C1C8vNB2w", "label": "YouTube" },
+      { "type": "apple_music", "url": "https://music.apple.com/us/artist/wally-schnalle/162798646", "label": "Apple Music" }
+    ]
   }
 ]

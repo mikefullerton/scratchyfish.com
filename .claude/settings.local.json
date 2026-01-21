@@ -15,7 +15,9 @@
       "Bash(curl:*)",
       "Bash(git push:*)",
       "Bash(gh run list:*)",
-      "WebFetch(domain:idiotfish.net)"
+      "WebFetch(domain:idiotfish.net)",
+      "WebFetch(domain:linktr.ee)",
+      "WebSearch"
     ]
   }
 }

@@ -852,65 +852,101 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--color-bg-card);
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s ease;
-  display: grid;
-  grid-template-columns: 1fr 150px;
-  align-items: start;
+  max-width: 500px;
 }
 
-.friend-card:hover {
-  transform: translateY(-3px);
+.friend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+.friend-title {
+  flex: 1;
+}
+
+.friend-title h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.friend-title h3 a {
+  color: var(--color-text);
+}
+
+.friend-title h3 a:hover {
+  color: var(--color-accent);
+}
+
+.friend-description {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin: 0;
 }
 
 .friend-image {
   display: block;
-  order: 2;
-  padding: 15px;
+  flex-shrink: 0;
 }
 
 .friend-image img {
-  width: 120px;
+  width: 100px;
   height: auto;
   object-fit: contain;
   border-radius: 6px;
 }
 
-.friend-info {
-  padding: 20px;
-  order: 1;
+.friend-links {
+  padding: 0 20px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 0;
+  padding-top: 15px;
 }
 
-.friend-info h3 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-}
-
-.friend-info h3 a {
-  color: var(--color-text);
-}
-
-.friend-info h3 a:hover {
-  color: var(--color-accent);
-}
-
-.friend-info p {
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
+.friend-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin-bottom: 15px;
 }
 
-.friend-info .btn {
-  font-size: 0.85rem;
-  padding: 8px 16px;
+.friend-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  width: fit-content;
+}
+
+.friend-link:hover {
+  color: var(--color-accent);
+}
+
+.friend-link svg {
+  flex-shrink: 0;
+}
+
+.friend-links .btn {
+  font-size: 0.9rem;
 }
 
 @media (max-width: 480px) {
-  .friend-card {
-    grid-template-columns: 1fr 100px;
+  .friend-header {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
   }
 
   .friend-image img {
     width: 80px;
+  }
+
+  .friend-links-list {
+    align-items: center;
   }
 }
 
