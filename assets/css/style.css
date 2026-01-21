@@ -612,6 +612,34 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
+.member-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.member-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--color-bg-alt);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  transition: all 0.3s ease;
+}
+
+.member-link:hover {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+.member-link svg {
+  flex-shrink: 0;
+}
+
 /* Contact */
 .contact-content {
   max-width: 600px;
