@@ -858,17 +858,34 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   width: 100%;
   padding: 20px;
+  position: relative;
+}
+
+.friend-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.friend-image img {
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.3;
 }
 
 .friend-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  position: relative;
+  z-index: 1;
   margin-bottom: 20px;
 }
 
 .friend-title {
-  flex: 1;
+  max-width: 70%;
 }
 
 .friend-title h3 {
@@ -890,19 +907,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.friend-image {
-  display: block;
-  flex-shrink: 0;
-}
-
-.friend-image img {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 6px;
-}
-
 .friend-links {
+  position: relative;
+  z-index: 1;
   width: 100%;
 }
 

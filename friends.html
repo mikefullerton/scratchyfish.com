@@ -8,16 +8,16 @@ subtitle: Bands and artists we love
 <div class="friends-grid">
   {% for friend in site.data.friends %}
   <div class="friend-card">
+    {% if friend.image %}
+    <div class="friend-image">
+      <img src="{{ friend.image }}" alt="{{ friend.name }}">
+    </div>
+    {% endif %}
     <div class="friend-header">
       <div class="friend-title">
         <h3><a href="{{ friend.url }}" target="_blank" rel="noopener">{{ friend.name }}</a></h3>
         <p class="friend-description">{{ friend.description }}</p>
       </div>
-      {% if friend.image %}
-      <a href="{{ friend.url }}" target="_blank" rel="noopener" class="friend-image">
-        <img src="{{ friend.image }}" alt="{{ friend.name }}">
-      </a>
-      {% endif %}
     </div>
     <div class="friend-links">
       {% if friend.links.size > 0 %}
