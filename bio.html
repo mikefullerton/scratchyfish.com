@@ -23,7 +23,7 @@ subtitle: Get to know the band
     {% for member in site.data.bio.members %}
     <div class="member-card">
       <div class="member-photo">
-        <img src="{{ member.photo }}" alt="{{ member.name }}">
+        <img src="{% if member.photo contains 'http' %}{{ member.photo }}{% else %}{{ member.photo | relative_url }}{% endif %}" alt="{{ member.name }}">
       </div>
       <div class="member-info">
         <h3>{{ member.name }}</h3>
