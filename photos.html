@@ -9,7 +9,7 @@ subtitle: Gallery
   {% for photo in site.data.photos %}
   <figure class="photo-item">
     <img src="{{ photo.src }}" alt="{{ photo.alt }}" loading="lazy">
-    {% if photo.caption %}
+    {% if photo.caption and photo.caption != "" %}
     <figcaption>{{ photo.caption }}</figcaption>
     {% endif %}
   </figure>
