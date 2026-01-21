@@ -14,9 +14,9 @@ subtitle: Bands and artists we love
     </a>
     {% endif %}
     <div class="friend-info">
-      <h2>{{ friend.name }}</h2>
+      <h3><a href="{{ friend.url }}" target="_blank" rel="noopener">{{ friend.name }}</a></h3>
       <p>{{ friend.description }}</p>
-      <a href="{{ friend.url }}" target="_blank" rel="noopener" class="btn">Visit {{ friend.name }} &rarr;</a>
+      <a href="{{ friend.url }}" target="_blank" rel="noopener" class="btn">Visit Site &rarr;</a>
     </div>
   </div>
   {% endfor %}

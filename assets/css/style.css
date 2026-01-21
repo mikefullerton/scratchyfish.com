@@ -844,13 +844,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Friends */
 .friends-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 .friend-card {
   background: var(--color-bg-card);
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -866,39 +866,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .friend-image img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.friend-card:hover .friend-image img {
-  transform: scale(1.05);
 }
 
 .friend-info {
-  padding: 25px;
-  text-align: center;
+  padding: 20px;
 }
 
-.friend-info h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+.friend-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.friend-info h3 a {
+  color: var(--color-text);
+}
+
+.friend-info h3 a:hover {
+  color: var(--color-accent);
 }
 
 .friend-info p {
   color: var(--color-text-muted);
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
 }
 
 .friend-info .btn {
-  font-size: 1rem;
-}
-
-@media (max-width: 480px) {
-  .friends-grid {
-    grid-template-columns: 1fr;
-  }
+  font-size: 0.85rem;
+  padding: 8px 16px;
 }
 
 /* Mailchimp Signup */
