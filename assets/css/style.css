@@ -853,18 +853,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
   overflow: hidden;
   max-width: 500px;
-}
-
-.friend-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr auto;
   padding: 20px;
   gap: 20px;
 }
 
 .friend-title {
-  flex: 1;
+  grid-column: 1;
 }
 
 .friend-title h3 {
@@ -886,9 +882,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.friend-right {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .friend-image {
   display: block;
-  flex-shrink: 0;
+  margin-bottom: 15px;
 }
 
 .friend-image img {
@@ -898,26 +901,19 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 6px;
 }
 
-.friend-links {
-  padding: 0 20px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 0;
-  padding-top: 15px;
-}
-
 .friend-links-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: 15px;
+  gap: 6px;
+  margin-bottom: 12px;
 }
 
 .friend-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   color: var(--color-text-muted);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: color 0.3s ease;
   width: fit-content;
 }
@@ -930,19 +926,23 @@ h1, h2, h3, h4, h5, h6 {
   flex-shrink: 0;
 }
 
-.friend-links .btn {
-  font-size: 0.9rem;
+.friend-right .btn {
+  font-size: 0.8rem;
+  padding: 6px 12px;
 }
 
 @media (max-width: 480px) {
-  .friend-header {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
+  .friend-card {
+    grid-template-columns: 1fr;
   }
 
-  .friend-image img {
-    width: 80px;
+  .friend-right {
+    grid-column: 1;
+    align-items: center;
+  }
+
+  .friend-title {
+    text-align: center;
   }
 
   .friend-links-list {
