@@ -1,4 +1,4 @@
-<section class="hero" {% if include.image %}style="background-image: url('{{ include.image }}')"{% elsif site.data.site.hero_image %}style="background-image: url('{{ site.data.site.hero_image }}')"{% endif %}>
+<section class="hero" {% if include.image %}style="background-image: url('{{ include.image | relative_url }}')"{% elsif site.data.site.hero_image %}style="background-image: url('{{ site.data.site.hero_image | relative_url }}')"{% endif %}>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>{{ include.title | default: site.data.site.title }}</h1>

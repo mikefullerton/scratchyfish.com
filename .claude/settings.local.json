@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(gh api:*)",
+      "Bash(open https://mikefullerton.github.io/scratchyfish.com/)",
+      "WebFetch(domain:mikefullerton.github.io)",
+      "Bash(git push)"
     ]
   }
 }
