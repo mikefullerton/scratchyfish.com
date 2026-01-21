@@ -9,7 +9,8 @@
       "Bash(git push)",
       "WebFetch(domain:www.scratchyfish.com)",
       "Bash(open https://mikefullerton.github.io/scratchyfish.com/bio)",
-      "Bash(sips:*)"
+      "Bash(sips:*)",
+      "Bash(open https://mikefullerton.github.io/scratchyfish.com/shows)"
     ]
   }
 }
