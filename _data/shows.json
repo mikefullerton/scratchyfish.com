@@ -1,9 +1,12 @@
-[
-  {
-    "date": "2025-02-15",
-    "venue": "Art Boutiki",
-    "city": "San Jose, CA",
-    "ticket_url": "https://app.gopassage.com/events/idiot-fish-25-1",
-    "details": "Opening for Idiot Fish, 8:30pm. 44 Race Street, San Jose, CA 95126"
-  }
-]
+{
+  "upcoming": [
+  ],
+  "past": [
+    {
+      "date": "2025-02-15",
+      "venue": "Art Boutiki",
+      "city": "San Jose, CA",
+      "details": "Opening for Idiot Fish, 8:30pm. 44 Race Street, San Jose, CA 95126"
+    }
+  ]
+}

@@ -64,12 +64,12 @@ title: Home
 {% endif %}
 
 <!-- Upcoming Shows Section -->
-{% if site.data.shows.size > 0 %}
+{% if site.data.shows.upcoming.size > 0 %}
 <section class="section shows-section">
   <div class="container">
     <h2>Upcoming Shows</h2>
     <div class="shows-list">
-      {% for show in site.data.shows limit:3 %}
+      {% for show in site.data.shows.upcoming limit:3 %}
       <div class="show-item">
         <div class="show-date">
           <span class="month">{{ show.date | date: "%b" }}</span>
