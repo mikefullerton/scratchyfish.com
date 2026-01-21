@@ -1,0 +1,26 @@
+---
+layout: page
+title: Friends
+subtitle: Bands and artists we love
+---
+
+{% if site.data.friends.size > 0 %}
+<div class="friends-grid">
+  {% for friend in site.data.friends %}
+  <div class="friend-card">
+    {% if friend.image %}
+    <a href="{{ friend.url }}" target="_blank" rel="noopener" class="friend-image">
+      <img src="{{ friend.image }}" alt="{{ friend.name }}">
+    </a>
+    {% endif %}
+    <div class="friend-info">
+      <h2>{{ friend.name }}</h2>
+      <p>{{ friend.description }}</p>
+      <a href="{{ friend.url }}" target="_blank" rel="noopener" class="btn">Visit {{ friend.name }} &rarr;</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p class="no-content">Coming soon!</p>
+{% endif %}

@@ -6,5 +6,6 @@
   { "name": "Shows", "url": "/shows" },
   { "name": "Photos", "url": "/photos" },
   { "name": "Video", "url": "/video" },
+  { "name": "Friends", "url": "/friends" },
   { "name": "Contact", "url": "/contact" }
 ]

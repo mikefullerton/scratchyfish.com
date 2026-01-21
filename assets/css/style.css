@@ -841,6 +841,66 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text);
 }
 
+/* Friends */
+.friends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.friend-card {
+  background: var(--color-bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.friend-card:hover {
+  transform: translateY(-5px);
+}
+
+.friend-image {
+  display: block;
+  overflow: hidden;
+}
+
+.friend-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.friend-card:hover .friend-image img {
+  transform: scale(1.05);
+}
+
+.friend-info {
+  padding: 25px;
+  text-align: center;
+}
+
+.friend-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.friend-info p {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.friend-info .btn {
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .friends-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Mailchimp Signup */
 .mailchimp-signup {
   padding: 60px 0;
