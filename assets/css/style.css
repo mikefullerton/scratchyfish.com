@@ -246,6 +246,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.past-event .post-image,
+.past-event .post-content {
+  filter: grayscale(70%) brightness(0.7);
+  opacity: 0.6;
+}
+
 .past-event-overlay {
   position: absolute;
   inset: 0;
@@ -255,17 +261,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-size: 4rem;
   font-weight: 700;
-  color: rgba(255, 68, 68, 0.6);
+  color: rgba(255, 50, 50, 1);
   text-transform: uppercase;
   letter-spacing: 0.2em;
   pointer-events: none;
   z-index: 11;
   transform: rotate(-35deg);
-}
-
-.past-event {
-  filter: grayscale(70%) brightness(0.7);
-  opacity: 0.6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .post-card:hover {
