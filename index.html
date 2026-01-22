@@ -20,7 +20,7 @@ title: Home
         {% endif %}
       {% endif %}
       <article class="post-card{% if is_past_event %} past-event{% endif %}">
-        {% if is_past_event %}<div class="past-event-overlay">OLD</div>{% endif %}
+        {% if is_past_event %}<div class="past-event-overlay">Past Event</div>{% endif %}
         {% if post.image %}
         <div class="post-image">
           <a href="{{ post.url | relative_url }}">
