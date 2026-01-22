@@ -248,18 +248,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .past-event-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--font-heading);
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: 700;
-  color: rgba(255, 68, 68, 0.4);
+  color: rgba(255, 68, 68, 0.35);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   pointer-events: none;
   z-index: 10;
-  white-space: nowrap;
+  transform: rotate(-35deg);
 }
 
 .post-card:hover {
