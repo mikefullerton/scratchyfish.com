@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-size: 8rem;
   font-weight: 700;
-  color: rgba(255, 68, 68, 0.85);
+  color: rgba(255, 68, 68, 0.6);
   text-transform: uppercase;
   letter-spacing: 0.2em;
   pointer-events: none;
