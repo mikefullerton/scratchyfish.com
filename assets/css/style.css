@@ -362,6 +362,56 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Single Post Page */
+.post-hero {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  padding: 120px 0 80px;
+  margin-top: var(--header-height);
+}
+
+.post-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.post-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.post-hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 10px;
+}
+
+.post-hero .post-date {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.post-hero .post-body {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.post-hero .post-body p {
+  margin-bottom: 1.5em;
+}
+
+.post-hero .post-nav {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .post-single {
   max-width: 800px;
   margin: 0 auto;
