@@ -241,6 +241,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-card:hover {
@@ -255,6 +257,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-content {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .post-content time {
@@ -282,7 +287,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .read-more {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: auto;
+  padding-top: 15px;
   font-size: 0.9rem;
   font-weight: 600;
 }
