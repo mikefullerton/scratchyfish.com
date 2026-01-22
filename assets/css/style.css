@@ -962,16 +962,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Member card as link */
-a.member-card {
-  display: flex;
-  flex-direction: row;
+.member-info h3 a {
+  color: var(--color-text);
   text-decoration: none;
-  color: inherit;
+}
+
+.member-info h3 a:hover {
+  color: var(--color-accent);
 }
 
 @media (max-width: 600px) {
-  .member-card,
-  a.member-card {
+  .member-card {
     flex-direction: column;
   }
 

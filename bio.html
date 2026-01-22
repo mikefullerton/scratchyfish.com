@@ -21,12 +21,14 @@ subtitle: Get to know the band
   <h2>The Band</h2>
   <div class="members-grid">
     {% for member in site.data.bio.members %}
-    <a href="{{ '/bio/' | append: member.slug | relative_url }}" class="member-card">
+    <div class="member-card">
       <div class="member-photo">
-        <img src="{% if member.photo contains 'http' %}{{ member.photo }}{% else %}{{ member.photo | relative_url }}{% endif %}" alt="{{ member.name }}">
+        <a href="{{ '/bio/' | append: member.slug | relative_url }}">
+          <img src="{% if member.photo contains 'http' %}{{ member.photo }}{% else %}{{ member.photo | relative_url }}{% endif %}" alt="{{ member.name }}">
+        </a>
       </div>
       <div class="member-info">
-        <h3>{{ member.name }}</h3>
+        <h3><a href="{{ '/bio/' | append: member.slug | relative_url }}">{{ member.name }}</a></h3>
         <p class="member-role">{{ member.role }}</p>
         <p class="member-bio">{{ member.bio }}</p>
         {% if member.links.size > 0 %}
@@ -54,7 +56,7 @@ subtitle: Get to know the band
         </div>
         {% endif %}
       </div>
-    </a>
+    </div>
     {% endfor %}
   </div>
 </section>
