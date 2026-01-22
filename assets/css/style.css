@@ -255,12 +255,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-size: 8rem;
   font-weight: 700;
-  color: rgba(255, 68, 68, 0.35);
+  color: rgba(255, 68, 68, 0.7);
   text-transform: uppercase;
   letter-spacing: 0.2em;
   pointer-events: none;
   z-index: 10;
   transform: rotate(-35deg);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .post-card:hover {
