@@ -2,7 +2,7 @@
 layout: post
 title: "Welcome to Our New Website"
 date: 2026-01-22
-image: "https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/789228/12aefeaecc5c8c98c3e01fe2aac928c5a29a3502/original/61bd94b2-2489-4ff5-8c72-6ef392413ee1-1-105-c.jpeg"
+image: "https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/789228/b2d9285d14df7a12efec0e24f8dd6a81b5f063f9/original/e418a77f-7a09-4971-bfd4-062bb6cf574a-1-105-c.jpeg"
 excerpt: "Big things are coming for Scratchy Fish in 2026!"
 ---
 
