@@ -50,7 +50,7 @@ title: Home
       {% for album in site.data.albums limit:3 %}
       <div class="music-list-item">
         <div class="music-list-info">
-          <h3>{{ album.title }}</h3>
+          <h3>{% if album.post_url %}<a href="{{ album.post_url | relative_url }}">{{ album.title }}</a>{% else %}{{ album.title }}{% endif %}</h3>
           <p class="album-artist">{{ album.artist }} &middot; {{ album.year }}</p>
         </div>
         <div class="music-list-player">
