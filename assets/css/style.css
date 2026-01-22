@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   font-family: var(--font-heading);
-  font-size: 8rem;
+  font-size: 4rem;
   font-weight: 700;
   color: rgba(255, 68, 68, 0.6);
   text-transform: uppercase;
