@@ -11,7 +11,16 @@ title: Home
     <h2>Latest News</h2>
     <div class="posts-grid">
       {% for post in site.posts limit:3 %}
-      <article class="post-card">
+      {% assign is_past_event = false %}
+      {% if post.event_date %}
+        {% assign event_timestamp = post.event_date | date: "%s" | plus: 0 %}
+        {% assign now_timestamp = site.time | date: "%s" | plus: 0 %}
+        {% if event_timestamp < now_timestamp %}
+          {% assign is_past_event = true %}
+        {% endif %}
+      {% endif %}
+      <article class="post-card{% if is_past_event %} past-event{% endif %}">
+        {% if is_past_event %}<div class="past-event-overlay">OLD</div>{% endif %}
         {% if post.image %}
         <div class="post-image">
           <a href="{{ post.url | relative_url }}">

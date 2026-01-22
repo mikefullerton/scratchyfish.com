@@ -243,6 +243,23 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.past-event-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgba(255, 68, 68, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  pointer-events: none;
+  z-index: 10;
+  white-space: nowrap;
 }
 
 .post-card:hover {
