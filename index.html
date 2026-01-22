@@ -31,7 +31,7 @@ title: Home
         <div class="post-content">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          <p>{{ post.content | strip_html | truncatewords: 80 }}</p>
+          <p>{{ post.content | strip_html | newline_to_br | truncatewords: 80 }}</p>
           <a href="{{ post.url | relative_url }}" class="read-more">Read more &rarr;</a>
         </div>
       </article>
