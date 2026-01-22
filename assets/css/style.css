@@ -263,15 +263,9 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(-35deg);
 }
 
-.past-event::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(128, 128, 128, 0.3);
-  z-index: 10;
-  pointer-events: none;
-  transform: none;
-  border-radius: 8px;
+.past-event {
+  filter: grayscale(70%) brightness(0.7);
+  opacity: 0.6;
 }
 
 .post-card:hover {
