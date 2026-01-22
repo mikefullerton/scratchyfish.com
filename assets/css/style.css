@@ -904,10 +904,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Single Member Page */
 .member-single {
-  display: grid;
-  grid-template-columns: 300px 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 40px;
   max-width: 900px;
+  align-items: flex-start;
+}
+
+.member-single-photo {
+  flex-shrink: 0;
+  width: 300px;
 }
 
 .member-single-photo img {
@@ -934,10 +940,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .member-single {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   .member-single-photo {
+    width: 100%;
     max-width: 250px;
     margin: 0 auto;
   }
