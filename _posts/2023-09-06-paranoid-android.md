@@ -2,7 +2,7 @@
 layout: post
 title: "Paranoid Android"
 date: 2023-09-06
-image: "https://img.youtube.com/vi/CkuTUFnVBO4/maxresdefault.jpg"
+image: "/assets/images/posts/paranoid-android.jpg"
 youtube_id: "CkuTUFnVBO4"
 excerpt: "Our jazz rock interpretation of Radiohead's epic from OK Computer."
 ---

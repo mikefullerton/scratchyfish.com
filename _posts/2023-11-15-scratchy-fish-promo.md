@@ -2,7 +2,7 @@
 layout: post
 title: "Scratchy Fish Promo"
 date: 2023-11-15
-image: "https://img.youtube.com/vi/PQz2077Qmco/maxresdefault.jpg"
+image: "/assets/images/posts/promo.jpg"
 youtube_id: "PQz2077Qmco"
 excerpt: "A little video about who we are."
 ---

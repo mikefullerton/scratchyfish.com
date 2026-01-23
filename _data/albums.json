@@ -2,7 +2,7 @@
   {
     "title": "Live at Art Boutiki",
     "artist": "Scratchy Fish",
-    "artwork": "https://img.youtube.com/vi/Dq7svQUIcM4/maxresdefault.jpg",
+    "artwork": "/assets/images/albums/art-boutiki.jpg",
     "year": 2024,
     "bandcamp_embed": "",
     "spotify_embed": "",
@@ -13,7 +13,7 @@
   {
     "title": "Attack of the Banana Slugs",
     "artist": "Scratchy Fish",
-    "artwork": "https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/789228/b253c4a49ee0454335ac5d54a8cd8bb8d382df75/original/bananaslugs.jpg",
+    "artwork": "/assets/images/albums/banana-slugs.jpg",
     "year": 2023,
     "bandcamp_embed": "",
     "spotify_embed": "https://open.spotify.com/embed/album/6begaPLxrQwTQCLoGTX2jk?utm_source=generator&theme=0",

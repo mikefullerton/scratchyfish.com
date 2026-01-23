@@ -2,7 +2,7 @@
 layout: post
 title: "Dodge the Dodo"
 date: 2023-09-06
-image: "https://img.youtube.com/vi/077LJiWNpf4/maxresdefault.jpg"
+image: "/assets/images/posts/dodge-the-dodo.jpg"
 youtube_id: "077LJiWNpf4"
 excerpt: "An original composition from our debut album Attack of the Banana Slugs."
 ---

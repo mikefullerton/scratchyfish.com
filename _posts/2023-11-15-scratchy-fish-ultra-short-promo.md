@@ -2,7 +2,7 @@
 layout: post
 title: "Scratchy Fish Ultra Short Promo"
 date: 2023-11-15
-image: "https://img.youtube.com/vi/zNY3tXXJK-g/maxresdefault.jpg"
+image: "/assets/images/posts/ultra-short-promo.jpg"
 youtube_id: "zNY3tXXJK-g"
 excerpt: "Ultra short promo video for venues."
 ---

@@ -2,7 +2,7 @@
   {
     "name": "Idiot Fish",
     "url": "https://idiotfish.net",
-    "image": "https://d10j3mvrs1suex.cloudfront.net/s:bzglfiles/u/147201/d527a9c51d39bcbae64ec3112232a6991abe3471/original/dall-e-2022-09-06-11-59-40.png",
+    "image": "/assets/images/friends/idiot-fish.png",
     "description": "Friends and Mentors",
     "links": [
       { "type": "website", "url": "https://idiotfish.net", "label": "idiotfish.net" },

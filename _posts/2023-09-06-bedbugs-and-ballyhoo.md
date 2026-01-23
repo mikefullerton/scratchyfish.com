@@ -2,7 +2,7 @@
 layout: post
 title: "Bedbugs and Ballyhoo"
 date: 2023-09-06
-image: "https://img.youtube.com/vi/mR1ghqqNHt8/maxresdefault.jpg"
+image: "/assets/images/posts/bedbugs-ballyhoo.jpg"
 youtube_id: "mR1ghqqNHt8"
 excerpt: "An original composition from our debut album Attack of the Banana Slugs."
 ---
