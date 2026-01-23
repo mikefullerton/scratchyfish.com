@@ -24,14 +24,16 @@ subtitle: Get to know the band
     <div class="member-card">
       <div class="member-photo">
         <a href="{{ '/bio/' | append: member.slug | relative_url }}">
-          <img class="photo-main" src="{% if member.photo contains 'http' %}{{ member.photo }}{% else %}{{ member.photo | relative_url }}{% endif %}" alt="{{ member.name }}">
           {% if member.photo_dog %}
-          <img class="photo-dog" src="{{ member.photo_dog }}" alt="{{ member.name }}'s dog" style="display: none;">
+          <img class="photo-main" src="{{ member.photo_dog }}" alt="{{ member.name }}'s dog">
+          <img class="photo-person" src="{% if member.photo contains 'http' %}{{ member.photo }}{% else %}{{ member.photo | relative_url }}{% endif %}" alt="{{ member.name }}" style="display: none;">
+          {% else %}
+          <img class="photo-main" src="{% if member.photo contains 'http' %}{{ member.photo }}{% else %}{{ member.photo | relative_url }}{% endif %}" alt="{{ member.name }}">
           {% endif %}
         </a>
         {% if member.photo_dog %}
-        <button class="dog-toggle" onclick="toggleDogPhoto(this); event.preventDefault();" title="Show dog photo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 12c0-1.5.5-3 1.5-4.5C7 6 8.5 5 10 4.5c0 0 .5 2 2 2s2-2 2-2c1.5.5 3 1.5 4 3 1 1.5 1.5 3 1.5 4.5 0 4-3.5 7.5-7.5 7.5S4.5 16 4.5 12zm3 1c0 .5.5 1 1 1s1-.5 1-1-.5-1-1-1-1 .5-1 1zm7 0c0 .5.5 1 1 1s1-.5 1-1-.5-1-1-1-1 .5-1 1zm-5.5 2.5c0 0 1 1.5 3 1.5s3-1.5 3-1.5"/></svg>
+        <button class="photo-toggle" onclick="togglePersonPhoto(this); event.preventDefault();" title="Show person photo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
         </button>
         {% endif %}
       </div>
@@ -85,18 +87,18 @@ function toggleBio(link) {
   }
 }
 
-function toggleDogPhoto(btn) {
+function togglePersonPhoto(btn) {
   var photoDiv = btn.closest('.member-photo');
   var mainPhoto = photoDiv.querySelector('.photo-main');
-  var dogPhoto = photoDiv.querySelector('.photo-dog');
+  var personPhoto = photoDiv.querySelector('.photo-person');
 
-  if (dogPhoto.style.display === 'none') {
+  if (personPhoto.style.display === 'none') {
     mainPhoto.style.display = 'none';
-    dogPhoto.style.display = '';
+    personPhoto.style.display = '';
     btn.classList.add('active');
   } else {
     mainPhoto.style.display = '';
-    dogPhoto.style.display = 'none';
+    personPhoto.style.display = 'none';
     btn.classList.remove('active');
   }
 }

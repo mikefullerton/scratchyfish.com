@@ -884,7 +884,7 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
 }
 
-.dog-toggle {
+.photo-toggle {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -901,12 +901,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease;
 }
 
-.dog-toggle:hover {
+.photo-toggle:hover {
   background: rgba(0, 0, 0, 0.8);
   color: var(--color-text);
 }
 
-.dog-toggle.active {
+.photo-toggle.active {
   background: var(--color-accent);
   color: var(--color-text);
 }
