@@ -31,6 +31,15 @@ subtitle: Listen to our tracks
       </div>
       {% endif %}
 
+      {% if album.youtube_embed and album.youtube_embed != "" %}
+      <div class="music-player youtube-player">
+        <h4>Watch on YouTube</h4>
+        <div class="video-embed">
+          <iframe src="{{ album.youtube_embed }}" title="{{ album.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      {% endif %}
+
       {% if album.tracks.size > 0 %}
       <div class="track-list">
         <h4>Track List</h4>
