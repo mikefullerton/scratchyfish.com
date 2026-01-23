@@ -73,6 +73,34 @@ subtitle: Get to know the band
 </section>
 
 <script>
+function equalizeBioHeights() {
+  var cards = document.querySelectorAll('.member-info');
+  cards.forEach(function(card) {
+    var silly = card.querySelector('.member-bio-silly');
+    var serious = card.querySelector('.member-bio-serious');
+    if (!silly || !serious) return;
+
+    // Reset heights and show both to measure
+    silly.style.minHeight = '';
+    serious.style.minHeight = '';
+    silly.style.display = '';
+    serious.style.display = '';
+
+    // Measure both
+    var sillyHeight = silly.offsetHeight;
+    var seriousHeight = serious.offsetHeight;
+    var maxHeight = Math.max(sillyHeight, seriousHeight);
+
+    // Set min-height to the max and hide serious
+    silly.style.minHeight = maxHeight + 'px';
+    serious.style.minHeight = maxHeight + 'px';
+    serious.style.display = 'none';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', equalizeBioHeights);
+window.addEventListener('resize', equalizeBioHeights);
+
 function toggleBio(link) {
   var card = link.closest('.member-info');
   var silly = card.querySelector('.member-bio-silly');
