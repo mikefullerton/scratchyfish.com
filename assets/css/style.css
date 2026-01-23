@@ -865,7 +865,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: row;
-  min-height: 200px;
+  min-height: 250px;
   align-items: stretch;
 }
 
