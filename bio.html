@@ -104,36 +104,52 @@ function equalizeBioHeights() {
 document.addEventListener('DOMContentLoaded', equalizeBioHeights);
 window.addEventListener('resize', equalizeBioHeights);
 
-function toggleBio(link) {
-  var container = link.closest('.member-bio-container');
+function toggleMember(element) {
+  var card = element.closest('.member-card');
+  var container = card.querySelector('.member-bio-container');
   var silly = container.querySelector('.member-bio-silly');
   var serious = container.querySelector('.member-bio-serious');
+  var translateLink = container.querySelector('.translate-link');
 
-  if (silly.style.display !== 'none') {
+  var photoDiv = card.querySelector('.member-photo');
+  var mainPhoto = photoDiv.querySelector('.photo-main');
+  var personPhoto = photoDiv.querySelector('.photo-person');
+  var photoBtn = photoDiv.querySelector('.photo-toggle');
+
+  // Check current state (silly is showing = dog mode)
+  var isInSillyMode = silly.style.display !== 'none';
+
+  if (isInSillyMode) {
+    // Switch to serious/person mode
     silly.style.display = 'none';
     serious.style.display = '';
-    link.textContent = '...translate back';
+    translateLink.textContent = '...translate back';
+
+    if (personPhoto && photoBtn) {
+      mainPhoto.style.display = 'none';
+      personPhoto.style.display = '';
+      photoBtn.classList.add('active');
+    }
   } else {
+    // Switch to silly/dog mode
     silly.style.display = '';
     serious.style.display = 'none';
-    link.textContent = '...translate';
+    translateLink.textContent = '...translate';
+
+    if (personPhoto && photoBtn) {
+      mainPhoto.style.display = '';
+      personPhoto.style.display = 'none';
+      photoBtn.classList.remove('active');
+    }
   }
 }
 
-function togglePersonPhoto(btn) {
-  var photoDiv = btn.closest('.member-photo');
-  var mainPhoto = photoDiv.querySelector('.photo-main');
-  var personPhoto = photoDiv.querySelector('.photo-person');
+function toggleBio(link) {
+  toggleMember(link);
+}
 
-  if (personPhoto.style.display === 'none') {
-    mainPhoto.style.display = 'none';
-    personPhoto.style.display = '';
-    btn.classList.add('active');
-  } else {
-    mainPhoto.style.display = '';
-    personPhoto.style.display = 'none';
-    btn.classList.remove('active');
-  }
+function togglePersonPhoto(btn) {
+  toggleMember(btn);
 }
 </script>
 {% endif %}
