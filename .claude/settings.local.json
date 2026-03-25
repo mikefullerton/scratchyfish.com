@@ -23,7 +23,10 @@
       "Bash(open https://scratchyfish.com)",
       "Bash(gh auth:*)",
       "Bash(git remote set-url:*)",
-      "WebFetch(domain:unsplash.com)"
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:www.youtube.com)",
+      "Bash(yt-dlp:*)",
+      "Bash(grep:*)"
     ]
   }
 }
